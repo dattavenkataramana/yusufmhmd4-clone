@@ -81,3 +81,11 @@ app.post('/register', async (request, response) => {
     }
   });
  
+  app.get("/", async (req,res)=>{
+    const selectUserQuery = `
+        SELECT * FROM users
+      `;
+
+      const data=await database.all(selectUserQuery)
+      res.send(data)
+  })

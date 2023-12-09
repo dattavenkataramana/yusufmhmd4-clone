@@ -17,3 +17,6 @@ Content-Type: application/json
     "password":"yusuf"
   
 }
+
+###
+GET http://localhost:3000/
